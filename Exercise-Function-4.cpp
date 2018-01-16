@@ -5,13 +5,13 @@
 
 using namespace std;
 
-void ombakOmbak(int repeat=3,int height=5,int up=2,int down=2)
+void squareWave(int repeat=3,int height=5,int up=2,int down=2)
 {
 	while(repeat >0)
 	{
-		for(/*up*/)
+		for(int i=1; i<=up; i++)
 		cout<<setw(height)<<right<<"+"<<endl;
-		for(/*down*/)
+		for(int i=1; i<=down; i++)
 		cout<<"+"<<endl;
 		repeat --;
 	}
@@ -19,9 +19,9 @@ void ombakOmbak(int repeat=3,int height=5,int up=2,int down=2)
 
 
 
-void OmbakKeluar()
+void waveDemo()
 {
 
 	cout<<"\nwaveDemo\n";
-	petakPelik();
+	squareWave();
 }
